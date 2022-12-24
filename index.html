@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list (static)</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+       <h1>
+        To do list
+       </h1>
+    </header>
+    <div class="input">
+        <input type="text" name="input" id="input" placeholder="Enter log">
+    </div>
+    <div class="buttons">
+        <button onclick="add()">Add</button>
+        <button onclick="clearOutput()">Clear</button>
+        <button onclick="editOutput()">Edit</button>
+    </div>
+    <div class="output-main">
+        <div class="output" id="output">
+            
+        </div>
+    </div>
+    <script>
+        let output = [];
+        let i = 0;
+
+        function add() {
+
+            output[i] = document.getElementById('output');
+            let idNo = parseInt(i) + 1;
+            let label1 = document.createElement("LABEL");
+            label1.setAttribute("id", "label" + idNo)
+            label1.innerHTML = " ("+ idNo+") -  "+ document.getElementById('input').value + "<br>";
+
+            let x = document.createElement("INPUT");
+            x.setAttribute("type", "checkbox");
+            x.setAttribute("id", "checkbox" + idNo);
+
+            if (document.getElementById('input').value == "") {
+                let input = document.getElementById('input');
+                input.setAttribute("placeholder", "Enter something...");
+            } else {
+                output[i].appendChild(x);
+                output[i].appendChild(label1);
+                document.getElementById('input').value = "";
+                i++;
+                console.log(i, output.length)
+            }
+        }
+
+        function clearOutput() {
+            for (let j = 0; j <= output.length; j++) {
+                output.pop()
+                console.log(output.length);
+            }
+            document.getElementById('output').innerHTML = "";
+            // delete output;
+            i = 0;
+        }
+
+        function editOutput() {
+            if (document.getElementById("input").value == "") {
+                alert("Enter something");
+            } else {
+                let editId = prompt("Enter number ");
+                let editAble = document.getElementById("label" + editId);
+                let newInput = " ("+ editId+") - "+ document.getElementById("input").value + "<br>";
+                editAble.innerHTML = newInput;
+            }
+        }
+    </script>
+</body>
+
+</html>

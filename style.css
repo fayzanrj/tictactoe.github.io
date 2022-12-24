@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to left, red , purple, red );
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: aqua; */
+    height: 60px;
+    font-style: italic;
+    color: aliceblue;
+}
+.input{
+    /* background-color: blue; */
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input[type=text] {
+    margin: 15px 0;
+    padding: 10px;
+    width: 250px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.input input[type=text]::placeholder{
+    font-style: italic;
+} 
+
+input[type=checkbox]:checked+label {
+    text-decoration: line-through;
+}
+
+.buttons{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    margin: 10px 25px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.output-main{
+    display: flex;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+}
+
+.output-main .output{
+    background-color: cadetblue;
+    padding: 10px 20px;
+    width: 200px;
+    box-sizing: content-box;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color:black ;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-image: url('@media screen and (max-width:600px)');
+        background-size: cover;
+        background-position: center;
+    }
+}
+    
