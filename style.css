@@ -75,11 +75,11 @@ input[type=checkbox]:checked+label {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
     body{
         background-image: url('@media screen and (max-width:600px)');
         background-size: cover;
         background-position: center;
     }
 }
-    
+     */
