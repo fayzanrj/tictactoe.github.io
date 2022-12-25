@@ -79,7 +79,7 @@
                     let editAble = document.getElementById("label" + editId);
                     let newInput = " ("+ editId+") - "+ document.getElementById("input").value + "<br>";
                     editAble.innerHTML = newInput;
-                    document.getElementById('input') = "";
+                    document.getElementById('input').value = "";
                     document.getElementById('input').focus();
                 } else {
                     alert("Item does not exist");
