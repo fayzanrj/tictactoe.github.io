@@ -19,7 +19,7 @@
        </h1>
     </header>
     <div class="input">
-        <input type="text" name="input" id="input" placeholder="Enter log">
+        <input type="text" name="input" id="input" placeholder="Enter log  / edit">
     </div>
     <div class="buttons">
         <button onclick="add()">Add</button>
@@ -74,7 +74,7 @@
             if (document.getElementById("input").value == "") {
                 alert("Enter something");
             } else {
-                let editId = prompt("Enter number ");
+                let editId = prompt("Enter number of item you want to edit");
                 let editAble = document.getElementById("label" + editId);
                 let newInput = " ("+ editId+") - "+ document.getElementById("input").value + "<br>";
                 editAble.innerHTML = newInput;
