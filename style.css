@@ -50,14 +50,16 @@ input {
     border-radius: none;
     padding: .2rem;
     outline: none;
-    font-weight: 600;
+    font-weight: 300;
     font-style: italic;
+    color: white;
 }
 
 input::placeholder {
     font-style: italic;
     font-weight: 600;
-    color: black;
+    color: gray;
+    font-size: .7rem;
 }
 
 .entername,
