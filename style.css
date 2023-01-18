@@ -47,7 +47,7 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid aliceblue;
-    border-radius: none;
+   border-radius: none none none none;
     padding: .2rem;
     outline: none;
     font-weight: 300;
