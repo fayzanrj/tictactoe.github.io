@@ -47,7 +47,10 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid aliceblue;
-   border-radius: none none none none;
+  border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+    border-bottom-left-radius: none;
     padding: .2rem;
     outline: none;
     font-weight: 300;
