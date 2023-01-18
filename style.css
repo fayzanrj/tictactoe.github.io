@@ -47,7 +47,7 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid aliceblue;
-  border-top-left-radius: none;
+    border-top-left-radius: none;
     border-top-right-radius: none;
     border-bottom-right-radius: none;
     border-bottom-left-radius: none;
@@ -64,7 +64,9 @@ input::placeholder {
     color: gray;
     font-size: .7rem;
 }
-
+p{
+    font-size: 1rem;
+}
 .entername,
 .start,
 .reset,
@@ -95,6 +97,7 @@ input::placeholder {
     border-radius: .5rem;
     /* background-color: aliceblue; */
     background-image: linear-gradient(to right, rgb(67, 124, 205), rgb(67, 235, 210));
+    transition: 2s;
 }
 
 .game-boxes {
