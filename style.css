@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: black;
+}
+
+.main-container {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    height: 2rem;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    font-family: monospace;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.info-inputs {
+    width: 20rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    /* background-color: blueviolet; */
+}
+
+input {
+    width: 10rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    border-radius: none;
+    padding: .2rem;
+    outline: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+}
+
+.entername,
+.start,
+.reset,
+.hardreset {
+    background-color: transparent;
+    margin: .3rem;
+    border-radius: 10%;
+    padding: .2rem;
+    font-style: italic;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+.hardreset {
+    margin: 1.05rem;
+}
+
+.info-display {
+    /* background-color: red; */
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: .5rem;
+    /* background-color: aliceblue; */
+    background-image: linear-gradient(to right, rgb(67, 124, 205), rgb(67, 235, 210));
+}
+
+.game-boxes {
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    opacity: 0;
+    background-color: gray;
+    transition: 2s;
+}
+
+.input-button {
+    width: 4rem;
+    height: 4rem;
+    /* margin: .4rem .4rem .4rem 0; */
+    border: 1px solid black;
+    /* box-shadow: 2px 5px 2px  black; */
+    color: black;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px 5px gray;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.input-button:disabled {
+    background-color: black;
+    border: 2px solid black;
+}
+
+
+#player2,
+#entername2,
+.hardreset,
+.start,
+.info-display {
+    display: none;
+}
+
+
+
+.reset {
+    display: none;
+}
+
+
+@media screen and (max-width:800px) {
+    /* h1{
+        font-size: rem;
+    } */
+}
