@@ -234,6 +234,7 @@ hardreset.addEventListener('click', () => {
 
     resetFunction();
     reset.style.display = "none"
+    start.style.display = "none"
     gameBoxes.style.opacity = '0'
     value = "X"
 })
